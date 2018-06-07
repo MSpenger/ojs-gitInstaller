@@ -90,7 +90,7 @@ cd $installvar
 #make sure to change OJS and database passwords after installation
 
 
-wget -O - --post-data="adminUsername=ojsbsbadmin&adminPassword=ojsbsbadmin&adminPassword2=ojs.bsbadmin&adminEmail=$emailvar&locale=en_US&additionalLocales[]=en_US&clientCharset=utf-8&connectionCharset=utf8&databaseCharset=utf8&filesDir=%2fsrv%2f$hostvar%2fhtml%2fgalleys_$installvar&encryption=sha1&databaseDriver=mysqli&databaseHost=localhost&databaseUsername=$installvar&databasePassword=$installvar&databaseName=$installvar&oaiRepositoryId=ojs2.$hostvar" "https://$hostvar/$installvar/index.php/index/install/install" --no-check-certificate
+wget -O - --post-data="adminUsername=admin&adminPassword=admin&adminPassword2=admin&adminEmail=$emailvar&locale=en_US&additionalLocales[]=en_US&clientCharset=utf-8&connectionCharset=utf8&databaseCharset=utf8&filesDir=%2fsrv%2f$hostvar%2fhtml%2fgalleys_$installvar&encryption=sha1&databaseDriver=mysqli&databaseHost=localhost&databaseUsername=$installvar&databasePassword=$installvar&databaseName=$installvar&oaiRepositoryId=ojs2.$hostvar" "https://$hostvar/$installvar/index.php/index/install/install" --no-check-certificate
 
 #Examples for installing additional addons
 
